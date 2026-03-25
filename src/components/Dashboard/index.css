@@ -1,0 +1,156 @@
+
+.dashboard-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.search-wrapper {
+  flex: 1;
+  max-width: 320px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.02);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: default;
+}
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.sortable-header:hover {
+  background-color: #f1f5f9;
+}
+
+.sort-icon {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.users-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.user-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-row:hover {
+  background-color: #fef9e3;
+  transform: scale(1.001);
+}
+
+.user-name {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.user-email {
+  color: #3b82f6;
+}
+
+.user-phone {
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.user-company {
+  font-style: italic;
+  color: #475569;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem !important;
+  color: #64748b;
+  font-style: italic;
+}
+
+.user-count {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #5b6e8c;
+  text-align: right;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 500px;
+  font-weight: 500;
+}

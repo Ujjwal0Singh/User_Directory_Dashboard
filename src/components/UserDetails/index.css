@@ -1,0 +1,137 @@
+.detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.user-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+  overflow: hidden;
+  border: 1px solid #eef2ff;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  padding: 2rem 2rem 1.25rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0e2250;
+  margin-bottom: 0.25rem;
+}
+
+.username {
+  color: #5b6e8c;
+  font-size: 0.95rem;
+}
+
+.info-section {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.info-section:last-child {
+  border-bottom: none;
+}
+
+.info-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: #f9fafb;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+}
+
+.info-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #5b6e8c;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: #b3bcd1;
+  word-break: break-word;
+}
+
+.geo-item {
+  grid-column: span 1;
+}
+
+.info-value a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.info-value a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+  .dashboard-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-wrapper {
+    max-width: none;
+  }
+  .users-table th, .users-table td {
+    padding: 0.75rem;
+  }
+  .card-header, .info-section {
+    padding: 1rem;
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-container {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
